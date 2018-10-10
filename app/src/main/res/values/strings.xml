@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Programowanie aplikacyjne</string>
+    <string name="loading">Trwa ładowanie proszę czekać</string>
 </resources>
