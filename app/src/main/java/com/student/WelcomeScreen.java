@@ -1,4 +1,6 @@
 package com.student;
 
-public class WelcomeScreen {
+import android.support.v4.app.Fragment;
+
+public class WelcomeScreen extends Fragment{
 }

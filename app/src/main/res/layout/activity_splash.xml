@@ -3,13 +3,13 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/black">
 
     <android.support.constraint.ConstraintLayout
+        android:background="@android:color/black"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottieAnimationView2"
@@ -24,17 +24,12 @@
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/green_monster" />
 
-
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="32sp"
         android:text="@string/loading"
         android:textColor="@android:color/black"/>
-
-
-
 
     </android.support.constraint.ConstraintLayout>
 </LinearLayout>

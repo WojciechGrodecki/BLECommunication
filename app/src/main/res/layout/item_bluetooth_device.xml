@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_default"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_default"/>
+
+    <TextView
+        android:id="@+id/txtvAddress"
+        android:layout_marginTop="@dimen/padding_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_semi"
+        />
+
+</LinearLayout>

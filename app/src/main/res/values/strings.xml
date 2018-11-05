@@ -1,4 +1,22 @@
 <resources>
     <string name="app_name">Programowanie aplikacyjne</string>
     <string name="loading">Trwa ładowanie proszę czekać</string>
+    <string name="welcome_text">Programowanie Aplikacyjne \n Wojciech Gródecki</string>
+    <string name="tittle_activity_maps">Mapa</string>
+    <string name="next">Dalej</string>
+    <string name="coordinates">Lat: %f Lon: %f</string>
+    <string name="cd_logo">Logo</string>
+    <string name="ble_not_supported">Device does not support BLE</string>
+    <string name="invalid_packet">Invalid packet</string>
+    <string name="et_hint">Type text here</string>
+    <string name="et_error">Edit text is empty</string>
+    <string name="send">Wyślij</string>
+    <string name="random_write">Random write</string>
+    <string name="instruction_text">Aby przejść dalej wybierz urządzenie BLE. \n
+        Aby odświeżyć przeciągnij w dół</string>
+    <string name="hello_text">xxddddd</string>
+    <string name="problem_with_sending">Problem with sending</string>
+    <string name="error_parse_message">Error parsing message</string>
+    <string name="error_crc">Bad CRC</string>
+    <string name="Lokalizacja">Lokalizacja znaleziona</string>
 </resources>

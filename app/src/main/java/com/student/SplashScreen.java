@@ -4,6 +4,7 @@ import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Handler;
+import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -50,13 +51,30 @@ public class SplashScreen extends AppCompatActivity {
 
 
     private void startWelcomeScreen(){
-        Intent intent = new Intent(this,WelcomeScreen.class);
-        startActivity(intent);
+       Intent intent = new Intent(this, BluetoothActivity.class);
+       startActivity(intent);
     }
 
     private void startTimeOutActivity(){
         Handler handler = new Handler();
         handler.postDelayed(this::startWelcomeScreen, DELAY);
 
+    }
+
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String permissions[],
+                                           @NonNull int[] grantResults) {
+        switch (requestCode) {
+            case REQUEST_CODE_ASK_PERMISSIONS:
+                for (int i = 0; i < permissions.length; ++i) {
+                    if (grantResults[i] != PackageManager.PERMISSION_GRANTED) {
+                        finish();
+                        return;
+                    }
+                }
+                startTimeOutActivity();
+                break;
+        }
     }
 }
