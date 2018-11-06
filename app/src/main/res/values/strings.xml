@@ -14,9 +14,12 @@
     <string name="random_write">Random write</string>
     <string name="instruction_text">Aby przejść dalej wybierz urządzenie BLE. \n
         Aby odświeżyć przeciągnij w dół</string>
-    <string name="hello_text">xxddddd</string>
+    <string name="hello_text">Witamy w aplikacji Projekt. Kliknij "dalej" a następnie wybierz
+        urządzenie BLE, z którym chcesz się połączyć. Następnie zostaniesz automatycznie przeniesiony
+        do mapy, gdzie zostaną pokazane współrzędne GPS.</string>
     <string name="problem_with_sending">Problem with sending</string>
     <string name="error_parse_message">Error parsing message</string>
     <string name="error_crc">Bad CRC</string>
     <string name="Lokalizacja">Lokalizacja znaleziona</string>
+    <string name="instruction">Po połączniu się z urządzeniem BLE. Podaj koordynaty GPS wraz z sumą kontrolna CRC16 Jak pokazano na obrazku</string>
 </resources>

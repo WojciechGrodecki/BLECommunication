@@ -1,7 +1,10 @@
-package com.student;
+package com.student.model;
 
 import android.support.annotation.IntDef;
 import android.support.annotation.NonNull;
+
+import com.google.android.gms.maps.model.LatLng;
+import com.student.utill.Crc16;
 
 import java.io.InvalidObjectException;
 import java.io.UnsupportedEncodingException;
@@ -10,11 +13,11 @@ import java.lang.annotation.RetentionPolicy;
 
 public class MessagePacket {
     @IntDef({Payload.READ, Payload.WRITE})
-@Retention(RetentionPolicy.SOURCE)
-@interface Payload {
-    int READ = 0;
-    int WRITE = 1;
-}
+    @Retention(RetentionPolicy.SOURCE)
+    @interface Payload {
+        int READ = 0;
+        int WRITE = 1;
+    }
 
     private int mPayload;
     private String mData;
@@ -36,11 +39,11 @@ public class MessagePacket {
         mCrc16 = Crc16.encrypt(mData.getBytes());
     }
 
-   /* public @NonNull LatLng getCoordinatesFromData() {
+    public @NonNull LatLng getCoordinatesFromData() {
         //TODO add proper method
         String[] split = mData.split("_");
         return new LatLng(Double.parseDouble(split[0]), Double.parseDouble(split[1]));
-    }*/
+    }
 
     public int getPayload() {
         return mPayload;

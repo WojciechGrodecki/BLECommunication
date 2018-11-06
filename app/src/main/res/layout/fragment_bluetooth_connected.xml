@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@android:color/black"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
@@ -12,14 +14,16 @@
         android:orientation="horizontal">
 
         <EditText
+            android:background="@android:color/white"
             android:id="@+id/etText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:padding="@dimen/padding_default"
             android:hint="@string/et_hint"
+            android:inputType="text"
+            android:padding="@dimen/padding_default"
             android:textColor="@android:color/white"
-            android:inputType="text"/>
+            android:textColorLink="@color/colorPrimaryDark" />
 
         <Button
             android:id="@+id/btnSend"

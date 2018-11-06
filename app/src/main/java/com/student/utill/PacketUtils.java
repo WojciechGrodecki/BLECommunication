@@ -1,6 +1,8 @@
-package com.student;
+package com.student.utill;
 
 import android.support.annotation.NonNull;
+
+import com.student.model.MessagePacket;
 
 import java.io.InvalidObjectException;
 import java.io.UnsupportedEncodingException;

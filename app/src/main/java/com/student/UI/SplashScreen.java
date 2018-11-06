@@ -1,4 +1,4 @@
-package com.student;
+package com.student.UI;
 
 import android.Manifest;
 import android.content.Intent;
@@ -9,6 +9,9 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.student.ble.BluetoothActivity;
+import com.student.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,7 +54,7 @@ public class SplashScreen extends AppCompatActivity {
 
 
     private void startWelcomeScreen(){
-       Intent intent = new Intent(this, BluetoothActivity.class);
+       Intent intent = new Intent(this, WelcomeScreen.class);
        startActivity(intent);
     }
 

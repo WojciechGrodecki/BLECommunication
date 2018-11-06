@@ -1,4 +1,4 @@
-package com.student;
+package com.student.utill;
 
 public class Crc16 {
     private final static int[] mTable = {

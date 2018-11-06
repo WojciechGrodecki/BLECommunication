@@ -1,4 +1,4 @@
-package com.student;
+package com.student.ble;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -19,9 +19,12 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.student.R;
+import com.student.model.MessagePacket;
+import com.student.utill.BluetoothUtils;
 
 public class BluetoothConnectedFragment  extends Fragment implements OnMapReadyCallback {
-    private static final int ZOOM_LEVEL = 7;
+    private static final int ZOOM_LEVEL = 16;
     private GoogleMap mMap;
     private BluetoothUtils mBluetoothUtils = BluetoothUtils.getInstance();
     private EditText mEtText;

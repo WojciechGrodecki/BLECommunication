@@ -1,4 +1,4 @@
-package com.student;
+package com.student.ble;
 
 import android.bluetooth.BluetoothDevice;
 import android.support.annotation.NonNull;

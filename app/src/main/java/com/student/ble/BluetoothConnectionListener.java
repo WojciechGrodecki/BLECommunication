@@ -1,4 +1,4 @@
-package com.student;
+package com.student.ble;
 
 import android.support.annotation.NonNull;
 

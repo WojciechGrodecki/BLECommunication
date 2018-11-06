@@ -2,9 +2,12 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/black"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="@dimen/padding_big">
-
+<android.support.design.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -24,7 +27,6 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-
             <View
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -37,8 +39,8 @@
                 android:layout_margin="16dp"
                 app:lottie_autoPlay="true"
                 app:lottie_loop="true"
-                android:layout_gravity="end"/>
-
+                android:layout_gravity="end"
+                app:lottie_rawRes="@raw/radar_scanning" />
 
         </LinearLayout>
 
@@ -56,10 +58,16 @@
 
     </LinearLayout>
 
+
+
     <FrameLayout
         android:id="@+id/flContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@android:color/transparent"/>
 
+    <include layout="@layout/main_bottom_sheet">
+
+    </include>
+</android.support.design.widget.CoordinatorLayout>
 </FrameLayout>

@@ -1,4 +1,4 @@
-package com.student;
+package com.student.ble;
 
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
@@ -13,9 +13,12 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.transition.Slide;
 import android.widget.Toast;
 
 import com.google.android.gms.maps.model.LatLng;
+import com.student.R;
+import com.student.utill.BluetoothUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,7 +39,7 @@ public class BluetoothActivity extends AppCompatActivity {
         setContentView(R.layout.activity_bluetooth);
         setAdapter();
         enableBluetoothIfNecessary();
-
+        setupWindowAnimations();
     }
 
     @Override
@@ -53,6 +56,11 @@ public class BluetoothActivity extends AppCompatActivity {
         }
     }
 
+    private void setupWindowAnimations() {
+        Slide slide = new Slide();
+        slide.setDuration(1000);
+        getWindow().setExitTransition(slide);
+    }
 
     private void setAdapter() {
         mSwipeRefreshLayout = findViewById(R.id.swipeRefreshLayout);

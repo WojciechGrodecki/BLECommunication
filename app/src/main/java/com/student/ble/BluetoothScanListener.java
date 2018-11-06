@@ -1,6 +1,8 @@
-package com.student;
+package com.student.ble;
 
 import android.support.annotation.NonNull;
+
+import com.student.ble.BluetoothDeviceListItem;
 
 import java.util.List;
 
