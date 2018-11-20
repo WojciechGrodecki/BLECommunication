@@ -30,23 +30,33 @@
             android:layout_height="wrap_content">
 
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="184dp"
-                android:contentDescription="cd_step"
-                android:src="@drawable/przechwytywanie" />
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="440dp"
+                    android:contentDescription="cd_step"
+                    android:src="@drawable/przechwytywanie" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="72dp"
+                    android:layout_marginRight="72dp"
+                    android:layout_marginBottom="80dp"
+                    android:text="@string/instruction"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/instruction"
-                android:textSize="22sp"
-                android:layout_marginLeft="72dp"
-                android:layout_marginRight="72dp"
-                android:layout_marginBottom="80dp"
-                android:textColor="@android:color/white" />
+                android:id="@+id/device"/>
 
+            </FrameLayout>
 
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>

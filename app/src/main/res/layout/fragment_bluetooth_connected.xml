@@ -31,6 +31,24 @@
             android:layout_height="wrap_content"
             android:text="@string/send"/>
 
+        <Button
+            android:id="@+id/angry_btn"
+
+            android:layout_width="119dp"
+            android:layout_height="35dp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="Zakończ działanie"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
     </LinearLayout>
 
     <fragment

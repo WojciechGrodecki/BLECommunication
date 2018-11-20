@@ -1,6 +1,7 @@
 package com.student.ble;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -39,11 +40,15 @@ public class BluetoothConnectedFragment  extends Fragment implements OnMapReadyC
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
+        view.findViewById(R.id.angry_btn).setOnClickListener(v -> end());
         setupMap();
         mEtText = view.findViewById(R.id.etText);
         view.findViewById(R.id.btnSend).setOnClickListener(v ->
                 sendMessage(mEtText.getText().toString()));
+    }
+
+    private void end (){
+        System.exit(0);
     }
 
     private void setupMap() {
