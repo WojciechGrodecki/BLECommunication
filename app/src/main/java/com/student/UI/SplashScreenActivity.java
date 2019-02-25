@@ -9,14 +9,12 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
-import com.student.ble.BluetoothActivity;
 import com.student.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class SplashScreen extends AppCompatActivity {
+public class SplashScreenActivity extends AppCompatActivity {
     private static final int DELAY =1700;
     private final static int REQUEST_CODE_ASK_PERMISSIONS = 101;
     private static final String[] REQUIRED_PERMISSIONS = new String[] {
@@ -51,10 +49,8 @@ public class SplashScreen extends AppCompatActivity {
         }
     }
 
-
-
     private void startWelcomeScreen(){
-       Intent intent = new Intent(this, WelcomeScreen.class);
+       Intent intent = new Intent(this, WelcomeScreenActivity.class);
        startActivity(intent);
     }
 
@@ -63,7 +59,6 @@ public class SplashScreen extends AppCompatActivity {
         handler.postDelayed(this::startWelcomeScreen, DELAY);
 
     }
-
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String permissions[],

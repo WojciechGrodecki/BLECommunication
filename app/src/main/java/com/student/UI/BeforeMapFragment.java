@@ -1,4 +1,4 @@
-package com.student;
+package com.student.UI;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import com.student.ble.BluetoothConnectedFragment;
 
 
-public class BeforeMap extends Fragment {
+public class BeforeMapFragment extends Fragment {
 private static final int DELAY = 1100;
 
     @Override

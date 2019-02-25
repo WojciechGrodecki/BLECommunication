@@ -77,7 +77,6 @@ public class BluetoothActivity extends AppCompatActivity {
     }
 
     private void deviceSelected(@NonNull BluetoothDevice device) {
-        //todo connect to ble device
         mBluetoothUtils.registerConnectionListener(new BluetoothConnectionListener() {
             @Override
             public void connectedToService() {

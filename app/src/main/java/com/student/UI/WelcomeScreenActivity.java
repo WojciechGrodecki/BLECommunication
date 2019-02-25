@@ -7,7 +7,7 @@ import android.os.Bundle;
 import com.student.R;
 import com.student.ble.BluetoothActivity;
 
-public class WelcomeScreen  extends Activity {
+public class WelcomeScreenActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,12 +16,8 @@ public class WelcomeScreen  extends Activity {
         findViewById(R.id.angry_btn).setOnClickListener(v -> bluetoothActivityStart());
     }
 
-    public void bluetoothActivityStart(){
-
+    public void bluetoothActivityStart() {
         Intent intent = new Intent(this, BluetoothActivity.class);
         startActivity(intent);
     }
-
-
-
 }

@@ -12,8 +12,7 @@ public class PacketUtils {
         public static final String PACKET_END = ">";
         private static final String PACKET_SEPARATOR = ":";
 
-        public @NonNull
-        String parse(@NonNull MessagePacket messagePacket) {
+        public @NonNull String parse(@NonNull MessagePacket messagePacket) {
             return PACKET_START +
                     messagePacket.getPayload() +
                     PACKET_SEPARATOR +

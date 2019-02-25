@@ -47,10 +47,6 @@ public class BluetoothConnectedFragment  extends Fragment implements OnMapReadyC
                 sendMessage(mEtText.getText().toString()));
     }
 
-    private void end (){
-        System.exit(0);
-    }
-
     private void setupMap() {
         SupportMapFragment mapFragment = (SupportMapFragment)
                 getChildFragmentManager().findFragmentById(R.id.mapFragment);

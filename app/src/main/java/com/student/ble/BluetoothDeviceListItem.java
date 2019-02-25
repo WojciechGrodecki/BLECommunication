@@ -4,7 +4,7 @@ import android.bluetooth.BluetoothDevice;
 import android.support.annotation.NonNull;
 
 public class BluetoothDeviceListItem  {
-    private String mName;
+        private String mName;
         private String mAddress;
         private BluetoothDevice mDevice;
 

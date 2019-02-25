@@ -40,7 +40,6 @@ public class MessagePacket {
     }
 
     public @NonNull LatLng getCoordinatesFromData() {
-        //TODO add proper method
         String[] split = mData.split("_");
         return new LatLng(Double.parseDouble(split[0]), Double.parseDouble(split[1]));
     }
