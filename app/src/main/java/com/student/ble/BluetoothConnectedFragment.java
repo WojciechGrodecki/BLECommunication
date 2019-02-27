@@ -69,9 +69,11 @@ public class BluetoothConnectedFragment  extends Fragment implements OnMapReadyC
         }
     }
 
+
     private void end (){
        getActivity().finishAffinity();
     }
+
 
     public void addMapPin(@NonNull LatLng coordinates) {
         if (isAdded()) {
