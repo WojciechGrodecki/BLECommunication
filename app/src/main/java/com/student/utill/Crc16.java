@@ -41,8 +41,6 @@ public class Crc16 {
         for (byte b : array) {
             crc = (crc >>> 8) ^ mTable[(crc ^ b) & 0xff];
         }
-
-        //todo fix hex formatting
         return "0x" + Integer.toHexString(crc);
     }
 }

@@ -73,7 +73,6 @@ public class BluetoothActivity extends AppCompatActivity {
         mAdapter = new BluetoothDevicesAdapter(mDiscoveredDevices);
         mAdapter.setListener(this::deviceSelected);
         mRecyclerView.setAdapter(mAdapter);
-
     }
 
     private void deviceSelected(@NonNull BluetoothDevice device) {

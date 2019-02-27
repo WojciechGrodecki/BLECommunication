@@ -68,6 +68,10 @@ public class BluetoothConnectedFragment  extends Fragment implements OnMapReadyC
         }
     }
 
+    private void end (){
+        System.exit(0);
+    }
+
     public void addMapPin(@NonNull LatLng coordinates) {
         if (isAdded()) {
             if (mCurrentMarker != null) {
@@ -84,5 +88,4 @@ public class BluetoothConnectedFragment  extends Fragment implements OnMapReadyC
         mMap = googleMap;
         mMap.setMyLocationEnabled(true);
     }
-
 }

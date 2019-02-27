@@ -1,4 +1,4 @@
-package com.student.UI;
+package com.student.ui;
 
 import android.Manifest;
 import android.content.Intent;
