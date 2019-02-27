@@ -67,11 +67,17 @@ public class BluetoothConnectedFragment  extends Fragment implements OnMapReadyC
             mEtText.setError(getString(R.string.et_error));
         }
     }
+<<<<<<< HEAD
 
     private void end (){
         System.exit(0);
     }
 
+=======
+    private void end (){
+        System.exit(0);
+    }
+>>>>>>> 680affc72bdf630c90df3129c062b5b14bbf912a
     public void addMapPin(@NonNull LatLng coordinates) {
         if (isAdded()) {
             if (mCurrentMarker != null) {
