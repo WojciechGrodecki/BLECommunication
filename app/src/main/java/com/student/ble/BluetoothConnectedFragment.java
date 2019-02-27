@@ -67,13 +67,7 @@ public class BluetoothConnectedFragment  extends Fragment implements OnMapReadyC
             mEtText.setError(getString(R.string.et_error));
         }
     }
-<<<<<<< HEAD
-
-    private void end (){
-        System.exit(0);
-    }
-
-=======
+    
     private void end (){
         System.exit(0);
     }
