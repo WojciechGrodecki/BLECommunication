@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Programowanie aplikacyjne</string>
+    <string name="app_name">BLE Communication</string>
     <string name="loading">Trwa ładowanie proszę czekać</string>
-    <string name="welcome_text">Programowanie Aplikacyjne \n Wojciech Gródecki</string>
+    <string name="welcome_text">BLE Communication \n Wojciech Gródecki</string>
     <string name="tittle_activity_maps">Mapa</string>
     <string name="next">Dalej</string>
     <string name="coordinates">Lat: %f Lon: %f</string>
@@ -14,7 +14,7 @@
     <string name="random_write">Random write</string>
     <string name="instruction_text">Aby przejść dalej wybierz urządzenie BLE. \n
         Aby odświeżyć przeciągnij w dół</string>
-    <string name="hello_text">Witamy w aplikacji Projekt. Kliknij "dalej" a następnie wybierz
+    <string name="hello_text">Witamy w aplikacji BLE Communication. Kliknij "dalej" a następnie wybierz
         urządzenie BLE, z którym chcesz się połączyć. Następnie zostaniesz automatycznie przeniesiony
         do mapy, gdzie zostaną pokazane współrzędne GPS.</string>
     <string name="problem_with_sending">Problem with sending</string>

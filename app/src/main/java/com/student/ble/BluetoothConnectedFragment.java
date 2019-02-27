@@ -22,6 +22,7 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.student.R;
 import com.student.model.MessagePacket;
+import com.student.ui.WelcomeScreenActivity;
 import com.student.utill.BluetoothUtils;
 
 public class BluetoothConnectedFragment  extends Fragment implements OnMapReadyCallback {
@@ -67,17 +68,11 @@ public class BluetoothConnectedFragment  extends Fragment implements OnMapReadyC
             mEtText.setError(getString(R.string.et_error));
         }
     }
-<<<<<<< HEAD
 
     private void end (){
-        System.exit(0);
+       getActivity().finishAffinity();
     }
 
-=======
-    private void end (){
-        System.exit(0);
-    }
->>>>>>> 680affc72bdf630c90df3129c062b5b14bbf912a
     public void addMapPin(@NonNull LatLng coordinates) {
         if (isAdded()) {
             if (mCurrentMarker != null) {
